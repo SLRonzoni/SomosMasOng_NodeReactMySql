@@ -13,11 +13,9 @@ Desarrollada con : con React JS, Html, Css y Bootstrap
 
 Validaciones : los formularios están validados con Formik
 
-Integraciones :  Plataforma de pagos Stripe con pago en U$S por tarjeta de crédito
-
-                 Plataforma de pagos Mercado Pago con pagos en AR$ en distintos medios de pago
-                 
-                 Login con Google
+Integraciones :  * Plataforma de pagos Stripe con pago en U$S por tarjeta de crédito
+                 * Plataforma de pagos Mercado Pago con pagos en AR$ en distintos medios de pago 
+                 * Login con Google
 
 Funcionalidades : 
 
@@ -56,6 +54,6 @@ Manejo de imágenes con : Aws S3
 
 Documentación : Swagger 
 
-Tests : Mocha y Chai, 234 tests aprobados en una base de datos paralela para no afectar la base original
+Tests : * Mocha y Chai, 234 tests aprobados en una base de datos paralela para no afectar la base original 
 
-        Postman, 94 tests aprobados, con manejo de entorno y variables globales
+        * Postman, 94 tests aprobados, con manejo de entorno y variables globales
