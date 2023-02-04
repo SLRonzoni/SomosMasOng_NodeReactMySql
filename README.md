@@ -18,7 +18,7 @@ Integraciones :  Plataforma de pagos Stripe con pago en U$S por tarjeta de créd
                  Plataforma de pagos Mercado Pago con pagos en AR$ en distintos medios de pago
                  
                  Login con Google
-                 
+
 Funcionalidades : 
 
 * Se contemplaron diferentes funcionalidades para usuarios administrador y usuarios regulares. Segun el role, se 
@@ -37,7 +37,6 @@ Funcionalidades :
 🏷️ Backend
 
 🌐 Deploy https://somosmasdeploybackend-production.up.railway.app
-
 
           rutas de ejemplo : https://somosmasdeploybackend-production.up.railway.app/categories
                              https://somosmasdeploybackend-production.up.railway.app/testimonials/public
