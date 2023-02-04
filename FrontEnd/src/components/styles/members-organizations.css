@@ -1,0 +1,65 @@
+.containerMembersAllCard{ /* 🆗*/
+    width:100vw;
+    display:flex;
+    flex-direction: column; 
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containerMembersAllCard h2{ /* 🆗*/
+    margin-top:1rem;
+}
+
+.containerTitle{ /* 🆗*/
+    margin-top:5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.divBtnDesplegableMembers{ /* 🆗*/
+    display:Flex;
+    margin: auto;
+    height: 2rem; 
+    width: 16rem;
+    margin-top: 1rem;
+}
+
+.fixedSizeCardOrganization{ /* 🆗*/
+    height:10rem;
+}
+
+.fixedSizeCardWelcomeOrganization{ /* 🆗*/
+    height:6rem;
+}
+
+.containerFormUpdateOrganiz{/* 🆗*/
+    max-width:95vw;
+    width: 60rem;
+    height: 90%;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items:stretch;
+    margin:4.5rem 0rem 0rem 0rem;
+    padding:0rem;
+    background-color: lightgrey;
+    color:#0e0d0d;
+    border-radius: 1rem;
+}
+
+.divColumnUpdateOrganiz{/* 🆗*/
+    display: block;
+    width: 47.5%;
+    padding:1rem;
+    background-color: rgb(197, 195, 195);
+    margin: 0rem 0.5rem 0.5rem ;
+    position: sticky;
+}
+
+.updateTextArea{/* 🆗*/
+    resize: vertical;
+    width: 26.2rem;
+    height: 1.6rem;
+}

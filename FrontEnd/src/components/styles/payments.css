@@ -1,0 +1,49 @@
+.containerPayment{/* 🆗*/
+  max-width:37vw;
+  width: 100%;
+  max-height:50rem;
+  height: 33rem; 
+  background-color: rgb(249, 244, 244);    
+  margin-top:4.7rem;  
+  padding: 1rem;
+  color:#422472;
+  border: 1px solid #422472;
+  border-radius: 1rem;
+}
+
+.containerPayment h1{/* 🆗*/
+  color:#422472;
+  margin-bottom: 1rem;
+}
+
+.formPaymentMethod{/* 🆗*/
+  max-width: 80vw;
+  height: auto;
+  width: 98%;
+  margin-left: 1.2%;
+  box-shadow: 0px 0px 0px 0.5px rgb(169, 169, 190),
+              0px 2px 5px 0px rgba(169, 169, 190, 0.999), 
+              0px 1px 1.5px 0px rgba(243, 238, 238, 0.07);
+  border-radius: 7px;
+  padding: 0.5rem;
+}
+
+.formPaymentMethod div label{/* 🆗*/
+  width: 20rem;
+}
+
+.formPaymentMethod div input{/* 🆗*/
+  width: 2rem;
+  margin-left: 1%;
+}  
+
+.formPaymentType {/* 🆗*/
+  margin:1rem 0 0 0;
+  padding: 0.5rem;
+}
+ 
+.icons{/* 🆗*/
+  font-size: 2rem;
+  color:#422472;
+  margin-right: 1rem;
+}

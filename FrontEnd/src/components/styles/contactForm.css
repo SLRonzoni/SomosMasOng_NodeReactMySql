@@ -1,0 +1,54 @@
+.containerContactForm{/* 🆗*/
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    padding:1rem;
+    background-color:lightgrey; 
+    color:#0e0d0d;  
+}
+
+.containerFormContact{ /* 🆗*/
+    width:100%;
+    height: auto;
+    margin-top: 6rem;
+    padding:0.8rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divGroupContactForm{/* 🆗*/
+    margin: auto;
+}
+
+.labelContactForm{/* 🆗*/
+    width: 9rem;
+    text-align: left;
+}  
+
+.inputContactForm{/* 🆗*/
+    width: auto;
+    height:2rem;
+    line-height:1rem;
+    background:#fff;
+    color:rgb(26, 26, 26);
+    border-radius:0.44rem;
+    padding:0 2rem 0 0.62rem;
+    transition:.3s ease all;
+    border:0.18rem solid transparent;
+}
+
+.tArea {/* 🆗*/
+    width:100%;
+    display: block;
+    height:7.5rem;
+    line-height:1rem;
+    resize:none;
+    background:#fff;
+    color:rgb(26, 26, 26);
+    border-radius:0.44rem;
+    padding:0 3.6rem 0 0.62rem;
+    transition:.3s ease all;
+    border:0.18rem solid transparent;
+}

@@ -1,0 +1,415 @@
+/* About, Register, MyProfile*/
+@media only screen  and (min-width:1150px) {
+    .containerLeft,
+    .cardAbout{
+        font-size: 2.2vh!important;
+    }
+
+    .containerForm{
+        width: 51%;
+    }
+
+    .containerMyProfile{
+        height: 70%;
+    }
+
+    .sliderHome,
+    .containerLeft{
+        margin:auto;
+    }
+
+    .sliderHome{
+        margin-top: -1rem;
+    }
+
+    .btn-success{
+        height:130%;
+        width: 50%;
+        font-size: 2.2vh;
+    }
+
+    .containerFormContact{
+        height: 100vh;
+    }
+
+    div .containerPayment,
+    .formPaymentMethod{
+        max-width: 45vw;
+        height: 90%;
+        width: 50;
+    }
+}
+
+/* Home , Navbar, Register, Contact, Login, DonationsList*/
+@media only screen  and (max-width:1150px) {
+    .containerHome{
+        display: block; 
+        margin: auto ;
+        padding: 1rem 1rem 1rem 1rem ;
+    }
+    .sliderHome,
+    .containerLeft{
+        width: 100%;   
+    }
+
+    .navbar{
+        justify-content:left;
+    }
+
+    .navbarH1{
+        width: auto;
+        margin-left: 1rem;
+    }
+
+    .margenEnd{
+        margin-top:1rem;
+        margin-left:15%;
+        display:block; 
+    }
+
+    .pEmailRegisterUserUpdate{
+        margin-left:10%;
+        margin-bottom:1rem;
+    }
+
+    .containerImgHalfScreen,
+    .MQuserMessage,
+    .MQuserPhoneDonations,
+    .imgHome,
+    .footer{
+        display:none;
+    }
+
+    .buttonsResponsive,
+    .containerAddress{
+        display: block;
+    }
+   
+    .containerLogin,
+    .imageActivity{
+        width: 90%;
+    }
+
+    .h5Login{
+        padding-top:5rem;
+    }
+
+    .buttonLoginGoogle{
+        height: 5rem;
+    }
+    
+    .buttonBlue{
+        margin:0.1rem;  
+    }
+
+    .heart,
+    .heart::before, 
+    .heart:after{
+        background-color: transparent;
+        border:0;
+    }
+
+    .heart p{
+        background-color: red;
+        border-radius: 10%;
+        margin-top: 2.5rem;
+    }
+
+    .formGroup{
+        /* display:block; */
+        margin:auto;
+        width: 100%;
+        padding:0.5rem;
+        /* width: 70vw; */
+    }
+     
+    .labelRegister{
+        width: 40%;
+        font-size: 0.85rem;
+    }
+ 
+    .tArea,
+    form .form-control{
+        width: 100%;
+        font-size: 0.65rem;
+    } 
+
+    div .containerPayment,
+    .formPaymentMethod{
+        max-width: 80vw;
+        height: 90%;
+        width: 50;
+    }
+} 
+
+/* Contact, Register, DonationsList, CreateForm*/
+@media only screen  and (max-width:1024px) {
+    .MQselectButtonsNews,
+    .MQinputWithImage,
+    .containerUpdateBig,
+    .MQselectButtonsDonations{
+        display: block;
+    }
+   
+    .MQuserIdDonations,
+    .MQuserNameDonations{
+        display: none;
+    }
+
+}
+
+/* UpdateForm */
+@media only screen  and (max-width:980px) {
+    .containerUpdateBig,
+    .divsUpdate{
+        display: block;
+        margin: auto;
+        width: 200%;
+        margin:4.5rem 2% 2% 2%;
+    }
+
+    .imgStripe{
+        width: 30%;
+    }
+
+    .formStripe {
+        width: 85%;
+    }
+
+    .MQorganization{
+        width: 85%;
+        margin: auto;
+        margin-top: 7rem;
+    }
+
+    .formStripe .formUserData img{
+       margin-left:70%;
+       width: 15%;
+    }
+}
+
+/* NewsList, UpdateForm, CreateForm */
+@media only screen  and (max-width:898px) { 
+    .MQupdatedTestim,
+    .MQimageCharTestim,
+    .MQimageCharNews,
+    .MQimageCharUser{
+        display: none;
+    }
+    
+    .MQdate{
+        display: block;
+        margin: auto;
+    }
+} 
+
+/* TestimonialCreate */
+@media only screen  and (max-width:829px) {
+    .buttonsResponsive{
+        display:block;
+        margin: auto;
+    }
+  
+    .formUserData .formStripeUser,
+    .MQbuttons{
+        display: block;
+    }
+
+    .MQcreatedUser{
+        display: none;
+    }
+} 
+
+
+/* Lists, ContactForm */
+@media only screen and (max-width: 740px) {
+    .MQimageChar,
+    .MQuserPhone,
+    .MQmessage,
+    .MQcreatedRoles{
+        display:none;
+    }
+   
+    .tableTotal{
+        padding:1rem;
+    }
+
+    .tableUser,
+    .tableNews,
+    .tableDonations{
+        font-size: 60%;
+    }
+
+    .divGroupContactForm,
+    .tArea{
+        display: block;
+    }
+}
+
+/* Lists */
+@media only screen and (max-width: 660px) { 
+    .MQtestim{
+        display:none;
+    }
+}
+
+/* Lists, LoginForm, PaymentMethods */
+@media only screen and (max-width: 580px) { 
+    .MQupdated,
+    .MQcategNews,
+    .MQcreatedNews,
+    .MQuserEmail,
+    .MQcreatedDonations,
+    .MQdescripRoles,
+    .MQemailRoles{
+        display:none;
+    }
+
+    .selectBtnDesplegable{
+        font-size: 80%;
+        width: 88%;
+    }
+
+    .tableTotal{
+        padding:1rem;
+    }
+
+    .tableTestim,
+    .tableMessages,
+    .tableDonations{
+        font-size:50%;
+    }
+    
+    .heart{
+        padding-top:3rem;
+    }
+    
+    .MQpaymentInputs{
+        font-size: 80%;
+    }
+    
+    .leyendaMP{
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Lists, UpdateForm , Cards, PaymentMethods*/
+@media only screen and (max-width: 470px) {
+    .MQcontent,
+    .MQuser,
+    .MQnews,
+    .MQcreated{
+        display:none;
+    }
+    
+    .MQselectButtons{
+        display: block;  
+    }
+
+    .tableTotal{
+        padding:1rem;
+    }
+
+    .card{
+        font-size: 0.8rem;
+        margin:2rem;
+        width: 90%;  
+    }
+
+    .card .card_info{
+        padding:0.5rem;
+        width: 123%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .MQseeMore{
+        margin:auto;
+    }
+
+    .card .card_publication {      
+       position:absolute;
+    }
+    
+    .MQgroupRegister{
+        display: block;
+    }
+
+    .divsUpdate{
+        width: 180%;
+    }
+
+    .containerUpdateBig{
+        width: 90%;
+    }
+
+    .formPaymentType h5{
+        font-size: 84%;
+        padding:0.1rem;
+        background-color: #422472;
+        color:#fff;
+        text-align: center;
+    }
+}
+
+/* Lists, Navbarf, Register, LoginForm , Cards*/
+@media only screen and (max-width: 391px) {
+    .MQuserEmailDonations,
+    .MQcreatedTestim,
+    .MQcontentNews,
+    .MQuserNameMessages{
+        display:none;
+    }
+    
+    .divGroupContactForm{
+        width: 115%;
+    }
+    
+    .MQiconDelRoles,
+    .MQiconDelTestim,
+    .MQiconDelMessages{
+        width: 50%;
+    }
+
+    .navbar h1{
+        font-size:100%;
+    }
+
+    .labelContactForm,
+    .tableRoles{
+        font-size:55%;
+    }
+    
+    .formGroup{
+        display: block;
+    }
+
+    .buttonLoginGoogle,
+    .h5Form,
+    .MQnoTenesCuenta{
+        width: 10rem;
+        margin-left: -4rem;
+    }
+
+    .card{
+        text-align: center;
+        width: 75%;  
+    }
+
+    .card .card_info{
+        margin-left: -0.2rem;
+        padding:0.5rem;
+        width: 75%;
+    }
+
+    .MQcardFontSize{
+        font-size: 1rem!important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .formUserData .formStripeUser p{
+        font-size: 65%;
+    }
+}

@@ -1,0 +1,250 @@
+.containerHome{ /* 🆗*/
+    height: 100%;
+    width: 100%;
+    background-color:rgb(32, 10, 67);
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start; 
+    padding: 0 10px;
+    color:#fff;
+}
+
+.containerLeft{ /* 🆗*/
+    width: 40%;
+    height: auto;
+    color:#fff;
+    border-radius: 1rem;
+    margin: 4.5rem -7rem 0 0;
+} 
+
+.containerLeft p{/* 🆗*/
+    text-align:justify;
+    font-size: 25px;
+    line-height: 2rem;
+    padding:3rem;
+    margin-bottom: 5px; 
+}
+
+.containerAddress{ /* 🆗*/
+    padding:0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.containerAddress a{ /* 🆗*/
+    display:flex;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.containerAddress span{ /* 🆗*/
+    margin-left:0.2rem;
+}
+
+.containerAddress p{ /* 🆗*/
+    margin-top:-2rem; 
+    margin-left: -2rem;
+}
+
+.buttonHome{ /* 🆗*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+}
+
+.iconHome{ /* 🆗*/
+    margin: auto;
+    width: 80%; 
+    height: auto;
+    color: #2abe1d;
+    margin-bottom: 0rem;
+    padding:0.5rem;
+}
+
+.iconPhone{/* 🆗*/
+    font-size: 180%;  
+    color: #2abe1d;  
+}
+
+.iconHomeMap{/* 🆗*/
+    font-size:210%;
+    color: #2abe1d;
+    margin-top:1.5rem;
+}
+
+.iconPhone :hover,
+.iconHome :hover,
+.iconHomeMap :hover{ /* 🆗*/
+    color:#fff;     
+} 
+
+.sliderHome{ /* 🆗*/
+    width: 50%;
+}
+
+.carousel-indicators{/* 🆗*/
+    visibility:hidden;
+}
+
+.containerImgHalfScreen{ /* 🆗*/
+    width: 50%;
+}
+
+.imgHalfScreen{ /* 🆗*/
+    height: 48vh;
+    width: 99.5%;
+    margin: 30% 0 0 0% ;
+    border-radius: 0 0 10% 3%;
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #fff); 
+}
+
+.containerLogin{ /* 🆗*/
+    width: 50%;
+    height: 100vh;
+    margin-top: 0rem;
+    background-color: lightgrey;
+    color:#0e0d0d;
+    padding:7rem;
+}
+
+.buttonLoginGoogle{/* 🆗*/
+    display: flex;
+    justify-content: flex-end;
+    padding-right:1rem;
+}
+
+.h5Form{ /* 🆗*/
+    text-align: center;
+    margin:2.5rem auto;
+}
+
+.containerRegister{ /* 🆗*/
+    display:flex;
+    width: 50%;
+    margin-top:2rem;
+    position: relative;
+    padding:1rem;
+    color:#0e0d0d;
+    background-color:lightgray;
+}
+
+.containerForm{ /* 🆗*/
+    width: 100%;
+    height: 90%; 
+    margin:auto;
+    margin-top:2rem;
+    display:flex;
+    flex-direction: column; 
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.containerFormLogin{ /* 🆗*/
+    width: 80%;
+    height: 67%; 
+    margin: 6rem auto;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.labelRegister{ /* 🆗*/
+   width: 9rem;
+}
+
+.inputRegisterForm{/* 🆗*/
+    width: 22rem;
+    height:2rem;
+    line-height:1rem;
+    background:#fff;
+    color:rgb(26, 26, 26);
+    border-radius:0.44rem;
+    padding:0 2rem 0 0.62rem;
+    transition:.3s ease all;
+    border:0.18rem solid transparent;
+}
+
+.inputContactForm  :focus {/* 🆗*/
+    border:0.5rem blue; 
+    box-shadow:0.12rem 0rem 1.2rem rgba(163,163,163,0.4);   
+}
+
+.withoutBorder{/* 🆗*/
+    border:transparent;
+}
+
+.errorsRegister{/* 🆗*/
+    margin-left:3rem
+}
+
+.flex-Center{/* 🆗*/
+    display: flex;
+    justify-content: center;
+}
+
+.formGroup,
+.handsAndHeart{ /* 🆗*/
+    display: flex;
+}
+
+.heart{/* 🆗*/
+    background-color:red;
+    border-bottom:0px groove #fff;
+    border-right:2px groove #fff;
+    width: 5.7rem;
+    height: 5.8rem;
+    margin:8.2rem 43rem;
+    transform: rotate(30deg); 
+    border-radius: 0.3rem;
+    animation: palpitar 2s linear infinite alternate;
+    will-change:transform;
+    position: absolute;
+}
+
+.heart::before, 
+.heart:after{/* 🆗*/
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before{ /* 🆗*/
+    top:0;
+    left:-50%;
+    border-left:5px groove #fff;
+}
+
+.heart::after{ /* 🆗*/
+    top:-50%;
+    left:0;
+    border-top:5px groove #fff;
+}
+
+.heart p{ /* 🆗*/
+    font-size: 1.1rem;
+    width:6rem;
+    margin: auto;
+    margin-left:-0.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transform: rotate(-45deg); 
+    color:#fff;
+}
+
+@keyframes palpitar{ /* 🆗*/
+    0%{
+        transform:rotate(30deg) scale(1)
+    }
+    50%{
+        transform:rotate(30deg) scale(1.2)
+    }
+}

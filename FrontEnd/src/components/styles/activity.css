@@ -1,0 +1,35 @@
+.containerActivities{/* 🆗*/
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color:rgb(32, 10, 67);
+    color:#fff;
+}
+
+.imageActivity{/* 🆗*/
+    display: block;
+    justify-content: center;
+    margin:auto;
+    width: 42vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.containerSlideSize{/* 🆗*/
+    height: 38.5rem;
+    width:90%;
+}
+
+.h6SlideActivity{/* 🆗*/
+    margin-top:1rem;
+    margin: auto;
+    width: 65%;
+    text-align: center;
+}
+
+.carrousel{/* 🆗*/
+    margin: auto;
+    margin-top: 5rem;
+}
