@@ -56,9 +56,9 @@ module.exports = {
         name: 'Rodrigo Fuente',
         image:'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/930.jpg',
         description: 'Contador',
-        facebookUrl: 'RodrigoFuentes',
-        instagramUrl:'RodrigoFuentes',
-        linkedinUrl:'RodrigoFuentes',
+        facebookUrl: 'RodrigoFuente',
+        instagramUrl:'RodrigoFuente',
+        linkedinUrl:'RodrigoFuente',
         createdAt: new Date(),
         updatedAt: new Date()
     },
