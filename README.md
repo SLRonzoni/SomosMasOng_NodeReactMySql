@@ -8,12 +8,15 @@ Se trata de una web para Somos Más Ong, una organización sin fines de lucro, q
 
 
 Interfaz desarrollada individualmente. Se diseñó con una vista sencilla, desestructurada, con imágen y color, que recuerdan a los dibujos animados.
+
 Desarrollada con : con React JS, Html, Css y Bootstrap
+
 Validaciones : los formularios están validados con Formik
-Integraciones :  Plataforma de pagos Stripe con pago en U$S por tarjeta de crédito
-                 Plataforma de pagos Mercado Pago con pagos en AR$ en distintos medios de pago
-                 Login con Google
+
+Integraciones :  Plataforma de pagos STRIPE con pago en U$S por tarjeta de crédito, Plataforma de pagos MERCADO PAGO con pagos en AR$ en distintos medios de pago,                    Login con GOOGLE
+
 Funcionalidades : 
+
 * Se contemplaron diferentes funcionalidades para usuarios administrador y usuarios regulares. Segun el role, se 
   muestran distintas opciones de vista y funciones.
 * La pantalla de inicio, tiene links al mapa de ubicación de la ong, Facebook e Instagram, e email de contacto.
@@ -32,16 +35,21 @@ Funcionalidades :
 🌐 Deploy https://somosmasdeploybackend-production.up.railway.app
 
           rutas de ejemplo : https://somosmasdeploybackend-production.up.railway.app/categories
-                  
                              https://somosmasdeploybackend-production.up.railway.app/testimonials/public
                                      
                   
 Api base desarrollada grupalmente en mi grupo de aceleración de Alkemy Node JS. 
-Realicé varias modificaciones, agregué funcionalidades, rutas, etc, a fin de adaptarla al proyecto final.
+
+Realicé varias modificaciones, agregué funcionalidades, rutas, etc, a fin de adaptarla al proyecto final
+
 Desarrollada con : Node JS, Express y Sequeliz
+
 Base de datos : MySql
+
 Envío de emails con : Sengrid y Ejs como motor de plantillas
+
 Manejo de imágenes con : Aws S3
+
 Documentación : Swagger 
-Tests : Mocha y Chai, 234 tests aprobados en una base de datos paralela para no afectar la base original
-        Postman, 94 tests aprobados, con manejo de entorno y variables globales
+
+Tests : MOCHA Y CHAI - 234 tests aprobados en una base de datos paralela para no afectar la base original , POSTMAN - 94 tests aprobados, con manejo de entorno y variables globales
