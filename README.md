@@ -6,14 +6,19 @@ Se trata de una web para Somos Más Ong, una organización sin fines de lucro, q
 
 🌐 Deploy https://somos-mas-deploy-frontend.vercel.app
 
+          Usuarios de prueba : usuario regular ..........test_user_1296093997@testuser.com      
+                               usuario administrador.....test_admin@gmail.com
+                               
+                               password para ambos 1234test
 
-Interfaz desarrollada individualmente. Se diseñó con una vista sencilla, desestructurada, con imágen y color, que recuerdan a los dibujos animados.
+
+Interfaz desarrollada individualmente. La diseñé con una vista sencilla, desestructurada, con imágen y color, que recuerdan a los dibujos animados. Es responsive.
 
 Desarrollada con : con React JS, Html, Css y Bootstrap
 
 Validaciones : los formularios están validados con Formik
 
-Integraciones :  Plataforma de pagos STRIPE con pago en U$S por tarjeta de crédito, Plataforma de pagos MERCADO PAGO con pagos en AR$ en distintos medios de pago,                    Login con GOOGLE
+Integraciones : Plataforma de pagos STRIPE con pago en U$S por tarjeta de crédito, Plataforma de pagos MERCADO PAGO con pagos en AR$ en distintos medios de pago,                    Login con GOOGLE
 
 Funcionalidades : 
 
