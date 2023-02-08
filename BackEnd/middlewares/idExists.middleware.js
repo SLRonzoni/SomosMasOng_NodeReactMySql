@@ -1,14 +1,24 @@
 const models= require('../models');
 
 const idExists = (req, res, next) => {
-  const { id } = req.params; 
-  const [,,url] = req.originalUrl.split('/');
+  const { id } = req.params;
+  let url=req.originalUrl
+   
+  if(url.includes('public')){ 
+    url = url.split('/public/'); 
+    url=url[0].split('/');  
+  } else {
+    url = req.originalUrl.split('/');
+  } 
+  url=url[1]  
+ 
   return getModel(id, url).then(model => {
     if (!model) {
       return res.status(404).json('id not found');
     }
     next();
   });
+  
 }
 
 const getModel = (id, url) => {
