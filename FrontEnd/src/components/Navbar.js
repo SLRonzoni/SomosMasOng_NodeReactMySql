@@ -25,7 +25,7 @@ export default function Sidebar () {
       icon: "info",
       title: `Gracias por visitarnos !`,
       showConfirmButton:false,
-      timer:2000
+      timer:1500
     })
     sessionStorage.clear();
     setTimeout( function() { window.location.href = "/"; }, 2000 );
@@ -73,10 +73,10 @@ export default function Sidebar () {
             <img className="imageUserNavBar" src={photo} alt="user"></img>
             <p className="centerText m-1">{name}</p>
           </li>
-          
+
           <li className="navbar-searcher">
             {((userInfo && userInfo.roleId!==1) || !userInfo) && (
-              <Searcher/>
+              <Searcher  setSidebar={setSidebar} sidebar={sidebar} />//paso props para controlar estado de navbar desde child
             )}
           </li>
 

@@ -365,8 +365,7 @@
     .containerTable{
         position:sticky;
     }
-
-    
+   
     .heart{
         margin-top:12rem;
     }
@@ -488,9 +487,9 @@
         column-width: 30rem;
     }
 
-    /* .formStripe {
-        max-height: 91vh;
-    } */
+    .MQnews h2{
+        margin-top: 3rem;
+    }
 }
 
 /* Lists, Navbarf, Register, LoginForm , Cards*/

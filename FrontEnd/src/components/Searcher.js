@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import "./styles/styles.css";
 import './styles/searcher.css';
 
-function Searcher() {
+function Searcher({sidebar, setSidebar}) { // recibo props para controlar estado navbar en el padre
 
   const history=useHistory()
 
@@ -23,15 +23,16 @@ function Searcher() {
       e.currentTarget.keyword.value='';
       history.push(`/searchResults?keyword=${keyword}`);
     }
+    setSidebar(!sidebar)
   }
 
-  return (
-  <form className="d-flex" onSubmit={submitHandler}>
-    <label className="form-label">
-      <input className="inputSearcher" type="text" name="keyword" placeholder="🔍 Ver en Noticias">
-      </input>
-    </label>
-  </form>
+  return (   
+    <form className="d-flex" onSubmit={submitHandler}>
+      <label className="form-label">
+        <input className="inputSearcher" type="text" name="keyword" placeholder="🔍 Ver en Noticias">
+        </input>
+      </label>
+    </form>
   )
 }
 
