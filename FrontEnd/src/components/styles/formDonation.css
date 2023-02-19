@@ -10,8 +10,8 @@
   
 .formStripe {/* 🆗*/
   width: 54%;
+  height: auto;
   margin: auto;
-  max-height: 100vh;
   padding: 1rem;
   background-color:lightgray;
   color:#0c0c0c;
@@ -109,13 +109,17 @@
 }
   
 .logoMP{/* 🆗*/
-  width:8rem;
-  padding:0 0.5rem 0 0.5rem;
+  width:7rem;
+  padding:0 0.8rem 0 0.8rem;
   border-radius:1rem;
-  size: auto;
+  margin: auto;
 }
   
 .methodText{/* 🆗*/
   margin-top: 0.1rem;
   text-transform: capitalize;
+}
+
+.MQTtextDonations span{
+  font-size:0.7rem;
 }

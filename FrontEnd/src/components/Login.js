@@ -22,19 +22,11 @@ const Login =()=>{
 
   const [password] = useState("")
 
-  const loginData= sessionStorage.getItem('loginData')
-
   //SHOW PASSWORD
   const [shown, setShown] = React.useState(false);
   const switchShown = () => setShown(!shown);
   
-  if(loginData==='true') {
-    Swal.fire({
-      icon: "info",
-      title: "Ya te encuentras logueado !",
-      showConfirmButton: false,
-      timer:1000
-    })
+  if(sessionStorage.getItem('loginDataGoogle')==='true') {
     return( <Redirect to="/"/>)
   } else {
     const loginOK = (usuario)=>{
@@ -54,24 +46,19 @@ const Login =()=>{
          showConfirmButton:false,
          timer:1000
        })
-   };
+    };
     
     //INICIO DE SESION
     const beginSession = async (values) => {    
-
       await axiosClient.post('/auth/login',{"email":values.email,"password":values.password},{withCredentials:true})
-
       .then(response=>{
         if(response.status===204 ||response.status===200 ){
           let name=response.data.user.firstName;
-          
-           sessionStorage.setItem('userInfo',JSON.stringify(response.data.user))
-           sessionStorage.setItem('token',JSON.stringify(response.data.token))
-           sessionStorage.setItem('loginData',true)
-
+          sessionStorage.setItem('userInfo',JSON.stringify(response.data.user))
+          sessionStorage.setItem('token',JSON.stringify(response.data.token))
+          sessionStorage.setItem('loginDataApi',true)
           loginOK(name);
           setTimeout( function() { window.location.href = "/About" }, 1000 );
-          
         } else {
           loginError(response);          
         }
@@ -91,9 +78,7 @@ const Login =()=>{
 
     //FORMIK VALIDATIONS 
     let validateInputs=(values) =>{   
-
         let errors = {email:'',password:'',iconNemail:'', icoNpassword:'',formOk:''};  
-
         if (!values.email) {
             errors.email=msg.msgRequired
             errors.icoNemail= X

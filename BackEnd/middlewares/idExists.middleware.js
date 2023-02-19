@@ -3,27 +3,27 @@ const models= require('../models');
 const idExists = (req, res, next) => {
   const { id } = req.params;
   let url=req.originalUrl
-   
+  
   if(url.includes('public')){ 
-    url = url.split('/public/'); 
-    url=url[0].split('/');  
+    url= url.split('/public/'); 
+    url= url[0].split('/');  
   } else {
-    url = req.originalUrl.split('/');
+    url = req.originalUrl.split('/api/');
+    url = req.originalUrl.split('/'); 
   } 
-  url=url[1]  
- 
-  return getModel(id, url).then(model => {
+  urlModel=url[2]
+  
+  return getModel(id, urlModel).then(model => {
     if (!model) {
       return res.status(404).json('id not found');
     }
     next();
   });
-  
 }
 
-const getModel = (id, url) => {
+const getModel = (id, urlModel) => {
   let model;
-  switch (url) {
+  switch (urlModel) {
     case 'activities': 
       model = models.Activity.findByPk(id);
     break;

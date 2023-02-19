@@ -15,13 +15,10 @@ const FormDonation = ({onAction}) => {
   let [isLoading, setIsLoading] = useState(false);
   let [selectRadio, setSelectRadio] = useState("");
   let initialValues = {amount:"", message: ""};
-  let photo, body; 
+  let body; 
   const stripe = useStripe();
   const elements = useElements();
- 
-  if (user && user.image!==""? photo=user.image : photo=<FaIcons.FaUser/>);
-  if (!user ? user="": user);
-    
+     
   //datos del usuario en sesión
   useEffect(() => {
     const userData=sessionStorage.getItem("userInfo")
@@ -55,19 +52,19 @@ const FormDonation = ({onAction}) => {
       "payment_method_id":selectRadio,
       "title":`donacion a Somos Mas ong`,
       "userId": user.id,
-      "userName": user.firstName,
-      "userLastName": user.lastName,
+      "userName": user.firstName || user.googleData.givenName,
+      "userLastName": user.lastName || user.googleData.familyName,
       "userPhone": user.phone || "",
-      "userEmail":user.email,
+      "userEmail":user.email || user.googleData.email,
       "payForm":`merc_pag AR$ ${sessionStorage.getItem("payMethod")}`,
       "statusPay":"Pend",
       "message": values.message,
       stripe:{
-        "amount":(values.amount*100),
+        "amount":values.amount*100,
         "payForm":`${sessionStorage.getItem("payMethod")} U$S`,
         "statusPay":"Conf"
       }          
-    };         
+    };        
     setIsLoading(true);
     return onAction(body,errorStripe,paymentMethodStripe)
   };
@@ -110,13 +107,13 @@ const FormDonation = ({onAction}) => {
         <form onSubmit={handleSubmit} className="formStripe">
                 <div className="formUserData">
                   <div className="formStripeUser">
-                    <img className="imgStripe" src={photo} alt="user"></img>                 
-                    <p className="ms-3"> Nombre   : {user.firstName}</p>
-                    <p className="ms-5"> Apellido : {user.lastName} </p>
+                    <img className="imgStripe" src={user.image || user.googleData.imageUrl || <FaIcons.FaUser/>}alt="user"></img>                 
+                    <p className="ms-3"> Nombre   : {user.firstName || user.googleData.givenName} </p>
+                    <p className="ms-5"> Apellido : {user.lastName || user.googleData.familyName}</p>
                   </div>
-                  <div className="formStripeUser  ms-5">
-                    <p > Email: {user.email}</p>
-                    <p > Teléfono : {user.phone}</p>
+                  <div className="formStripeUser ms-5">
+                    <p className="MQp"> Email: {user.email || user.googleData.email}</p>
+                    <p className="MQp"> Teléfono : {user.phone}</p>
                   </div>
                 </div> 
 
@@ -138,24 +135,24 @@ const FormDonation = ({onAction}) => {
 
                 <div className="formUserData">  
                   <div className="form-group">
-                    
-                    <div> 
-                      <span className="methodText">{sessionStorage.getItem('payMethod')} </span>   
-                      <div className={ViewMercadopagoTicketOptions()}> 
-                        <div className="d-flex">
-                          ( moneda AR$ )
-                          <input className="me-3 ms-3"
-                            type="radio"
-                            value='rapipago'
-                            checked={selectRadio==="rapipago"?true:false}
-                            onChange={changeSelectRadio}
-                          /> Rapipago 
-                          <input className="ms-4 me-3"
-                            type="radio"
-                            value='pagofacil'
-                            checked={selectRadio==="pagofacil"?true:false}
-                            onChange={changeSelectRadio}
-                          /> Pagofácil
+                    <div className="MQinputFontSize"> 
+                      <div className="MQTtextDonations"> 
+                        <span className="methodText">{sessionStorage.getItem('payMethod')} </span> 
+                        <div className={ViewMercadopagoTicketOptions()}> 
+                          <div className="d-flex MQfontSize">
+                            <input className="me-1"
+                              type="radio"
+                              value='rapipago'
+                              checked={selectRadio==="rapipago"?true:false}
+                              onChange={changeSelectRadio}
+                            /> <span>Rapipago AR$</span>
+                            <input className="ms-3 me-1"
+                              type="radio"
+                              value='pagofacil'
+                              checked={selectRadio==="pagofacil"?true:false}
+                              onChange={changeSelectRadio}
+                            /> <span>Pagofácil AR$</span>
+                          </div>
                         </div>
                       </div>
                       <input className="form-control"
@@ -174,25 +171,31 @@ const FormDonation = ({onAction}) => {
                 <div className={ViewStripeOptions()}> 
                   <div className="formUserData">  
                     <div className="form-group">
-                      <label> Tarjeta de Crédito - moneda U$S</label>                      
-                      <CardElement className="form-control cardElement"/>
-                      <span className="flex-Center">👉tarjeta: 16 dígitos/👉mm y aa: 2 dígitos/👉cvc: 3 dígitos/👉c.p.: 5 dígitos</span>
+
+                      <div className="MQTtextDonations">
+                        <label className="MQfontSize"> Tarjeta de Crédito - moneda U$S</label>                      
+                        <CardElement className="form-control cardElement MQfontSize"/>
+                        <span className="flex-Center mt-1">( número de tarjeta: 16 dígitos, MM/AA: 4 dígitos, CVC: 3 dígitos, C.P : 5 dígitos)</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className={ViewMercadopagoTotalOptions()}> 
-                    <span className="flex-Center">Te vamos a re-dirigir a   
-                      <img className="logoMP flex-Center"src="https://www.boutiqueautomovil.com.ar/wp-content/uploads/2019/05/logo-mercadopago.png" alt="mercadoPago"></img>  
-                    </span>
-                    <span className="flex-Center">para efectuar el pago</span>
+                  <div className="MQTtextDonations">
+                    <span className="flex-Center MQfontSize">Te vamos a re-dirigir a </span>
+                    <img className="logoMP flex-Center"src="https://www.boutiqueautomovil.com.ar/wp-content/uploads/2019/05/logo-mercadopago.png" alt="mercadoPago"></img>  
+                    <span className="flex-Center MQfontSize">para efectuar el pago</span>
+                  </div>  
                 </div>
 
                 <div className={ViewMercadopagoTicketOptions()}> 
-                    <span className="flex-Center">Te vamos a re-dirigir a   
-                      <img className="logoMP flex-Center"src="https://www.boutiqueautomovil.com.ar/wp-content/uploads/2019/05/logo-mercadopago.png" alt="mercadoPago"></img>  
-                    </span>
-                    <span className="flex-Center">Descargá el ticket y efectuá el pago en las sucursales habilitadas</span>
+                  <div className="MQTtextDonations">
+                    <span className="flex-Center MQfontSize">Te vamos a re-dirigir a</span>   
+                    <img className="logoMP flex-Center"src="https://www.boutiqueautomovil.com.ar/wp-content/uploads/2019/05/logo-mercadopago.png" alt="mercadoPago"></img>  
+                    <span className="flex-Center MQfontSize">Descargá el ticket y </span>
+                    <span className="flex-Center MQfontSize">pagá en las sucursales habilitadas</span> 
+                  </div>
                 </div>
                 
                 <div className="buttonsResponsive">
@@ -203,7 +206,7 @@ const FormDonation = ({onAction}) => {
                     </span>
                   </button>
                 </div>  
-      </form> 
+        </form> 
       )}
       </Formik>
       }

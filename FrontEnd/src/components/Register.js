@@ -51,6 +51,7 @@ const Register=(props)=> {
                     Swal.fire({
                     icon: "error",
                     title: "Error",
+                    text:response.data.errors[0].msg,
                     showConfirmButton:true
                     })
                 };          
@@ -59,7 +60,8 @@ const Register=(props)=> {
                 console.log(error)
                 Swal.fire({
                     icon: "error",
-                    title: "Error"
+                    title: "Error",
+                    text:error,
                 });
             });
         }

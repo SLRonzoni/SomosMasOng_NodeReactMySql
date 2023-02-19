@@ -11,6 +11,7 @@
 
     .containerMyProfile{
         height: 70%;
+        margin:0.5rem;
     }
 
     .sliderHome,
@@ -32,11 +33,21 @@
         height: 100vh;
     }
 
+    .containerFormLogin{
+        width: 44vw;
+        margin:0;
+        padding:0;
+    }
+
     div .containerPayment,
     .formPaymentMethod{
         max-width: 45vw;
         height: 90%;
         width: 50;
+    }
+
+    .MQTtextDonations span{
+        font-size: 1rem;
     }
 }
 
@@ -80,6 +91,14 @@
         display:none;
     }
 
+    .containerContactForm{
+        width: 90vw!important;
+    }
+
+    .containerFormContact{
+        width: 100vw!important;
+    }
+
     .buttonsResponsive,
     .containerAddress{
         display: block;
@@ -87,7 +106,13 @@
    
     .containerLogin,
     .imageActivity{
-        width: 90%;
+        width: 90%; 
+    }
+
+    .containerFormLogin{
+        width: 70vw; 
+        text-align: center;
+        margin-top:2rem;
     }
 
     .h5Login{
@@ -113,6 +138,7 @@
         background-color: red;
         border-radius: 10%;
         margin-top: 2.5rem;
+        margin:auto;
     }
 
     .formGroup{
@@ -128,6 +154,11 @@
         font-size: 0.85rem;
     }
  
+    .formStripe{
+        width: 90%;
+        /* height: auto; */
+    }
+
     .tArea,
     form .form-control{
         width: 100%;
@@ -156,6 +187,19 @@
         display: none;
     }
 
+    .containerRegister{
+        width: 90%;
+    }
+
+    .containerForm form,
+    .containerForm form input{
+        width: 100%;
+    }
+
+    .containerForm form .inputRegisterForm{
+        width: 67vw;
+    }
+
 }
 
 /* UpdateForm */
@@ -168,24 +212,20 @@
         margin:4.5rem 2% 2% 2%;
     }
 
-    .imgStripe{
-        width: 30%;
-    }
-
-    .formStripe {
-        width: 85%;
-    }
-
     .MQorganization{
         width: 85%;
         margin: auto;
         margin-top: 7rem;
     }
 
-    .formStripe .formUserData img{
-       margin-left:70%;
-       width: 15%;
+    .formUserData{
+        display: block;
     }
+
+    .heart{
+        margin-top:10rem;
+    }
+
 }
 
 /* NewsList, UpdateForm, CreateForm */
@@ -210,15 +250,28 @@
         margin: auto;
     }
   
-    .formUserData .formStripeUser,
+    .formUserData,
     .MQbuttons{
         display: block;
     }
 
+    .MQuserEmailDonations,
     .MQcreatedUser{
         display: none;
     }
-} 
+
+    .divGroupContactForm,
+    .tArea{
+        display: block;
+        text-align: center;
+    }
+
+    .containerFormLogin{
+        width: 86vw;
+        margin-top:4.5rem;
+        margin-left:-6rem;
+    }
+}
 
 
 /* Lists, ContactForm */
@@ -243,21 +296,30 @@
     .divGroupContactForm,
     .tArea{
         display: block;
+        text-align: center;
     }
 }
 
-/* Lists */
+/* Lists , Register*/
 @media only screen and (max-width: 660px) { 
     .MQtestim{
         display:none;
+    }
+
+    .errorsRegister{
+        margin: 1rem!important;
     }
 }
 
 /* Lists, LoginForm, PaymentMethods */
 @media only screen and (max-width: 580px) { 
     .MQupdated,
+    .imageMyProfile,
+    .iconInsideInputIcon,
     .MQcategNews,
     .MQcreatedNews,
+    .MQcreatedMess,
+    .MQupdatedNews,
     .MQuserEmail,
     .MQcreatedDonations,
     .MQdescripRoles,
@@ -280,8 +342,9 @@
         font-size:50%;
     }
     
-    .heart{
-        padding-top:3rem;
+    .buttonLoginGoogle{
+        width: 80vw!important;
+        margin-left:-8rem;
     }
     
     .MQpaymentInputs{
@@ -292,12 +355,29 @@
         display: block;
         text-align: center;
     }
+
+    .containerFormLogin{
+        width: 86vw;
+        margin-top:8rem;
+        margin-left:-6rem;
+    }
+
+    .containerTable{
+        position:sticky;
+    }
+
+    
+    .heart{
+        margin-top:12rem;
+    }
 }
 
 /* Lists, UpdateForm , Cards, PaymentMethods*/
 @media only screen and (max-width: 470px) {
     .MQcontent,
     .MQuser,
+    .MQuserTestim,
+    .MQupdatedUser,
     .MQnews,
     .MQcreated{
         display:none;
@@ -305,6 +385,14 @@
     
     .MQselectButtons{
         display: block;  
+    }
+
+    .info{
+        margin:1rem 0;
+    }
+
+    .MQdateProfile{
+        font-size: 60%!important;
     }
 
     .tableTotal{
@@ -334,10 +422,16 @@
     
     .MQgroupRegister{
         display: block;
+        width: 20rem;
     }
 
     .divsUpdate{
         width: 180%;
+    }
+
+    .formStripeUser{
+        display: block;
+        height: auto;
     }
 
     .containerUpdateBig{
@@ -351,12 +445,62 @@
         color:#fff;
         text-align: center;
     }
+
+    /* .MQfontSize, */
+    .formUserData span,
+    .formUserData label{
+        font-size: 80%;
+    }
+
+    .table-head tr th{
+        top:12rem;
+    }
+
+    /* .formUserData .MQTtextDonations label,
+    .formUserData .MQTtextDonations span,
+    .formUserData .MQTtextDonations div .MQfontSize,
+     ,
+    div span .MQfontSize,
+    .MQinputFontSize div .MQradioDonation div div input, 
+    .formUserData  .MQfontSize */
+   
+    .MQTtextDonations{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .MQinputFontSize .MQradioDonation div{
+        display: block;
+    }
+
+    .MQinputFontSize .MQradioDonation div div input{
+        margin: 0;
+        margin-left: 0.2;
+        margin-right: 0.3rem;
+    }
+
+    .logoMP{
+        width: 40%;
+        height: 1.5rem;
+    }
+
+    .cards{
+        column-width: 30rem;
+    }
+
+    /* .formStripe {
+        max-height: 91vh;
+    } */
 }
 
 /* Lists, Navbarf, Register, LoginForm , Cards*/
 @media only screen and (max-width: 391px) {
     .MQuserEmailDonations,
+    .imgStripe,
     .MQcreatedTestim,
+    .MQupdatedRoles,
+    .MQstatusDonations,
+    .MQcreatedMess,
     .MQcontentNews,
     .MQuserNameMessages{
         display:none;
@@ -376,6 +520,12 @@
         font-size:100%;
     }
 
+    .MQtextErrorLogin{
+        font-size: 0.7rem!important;
+        width: 10rem !important;
+        margin-left: 0;
+    }
+
     .labelContactForm,
     .tableRoles{
         font-size:55%;
@@ -385,7 +535,6 @@
         display: block;
     }
 
-    .buttonLoginGoogle,
     .h5Form,
     .MQnoTenesCuenta{
         width: 10rem;
@@ -403,13 +552,60 @@
         width: 75%;
     }
 
+    .containerLoginGoogle,
+    .containerFormLogin{
+        display: flex;
+        justify-content: center;
+    }
+
+    .MQnoTenesCuenta{
+        margin-left:0rem;
+    }
+
+    .buttonLoginGoogle{
+       margin-left:-5.5rem;
+    }
+ 
+    .h5Form {
+        margin-left:4rem;
+    }
+
+    .containerFormLogin{
+        padding-top: 9rem;
+        font-size: 1.1rem!important;
+        margin:auto;
+        margin-left:-6.5rem;
+    }
+
     .MQcardFontSize{
         font-size: 1rem!important;
         display: flex;
         justify-content: center;
     }
 
+    .formUserData .formStripeUser .MQp{
+        margin-left:-3rem!important; 
+    }
+
     .formUserData .formStripeUser p{
         font-size: 65%;
+        margin-left:0!important;
+        padding:0.5rem;
+    }
+  
+    /* .errorsRegister{
+        margin: -20rem!important;
+    } */
+
+    .formStripeUser{
+        margin: 0;
+    }
+
+    .formStripe{
+        max-height: 100vh;
+    }
+    
+    .heart{
+        margin-top:12rem;
     }
 }
