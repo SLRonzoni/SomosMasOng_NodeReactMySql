@@ -1,4 +1,5 @@
 💻 Proyecto personal 💻
+Deploy realizado en forma personal
 
 Se trata de una web para Somos Más Ong, una organización sin fines de lucro, que solicitó una web donde se pueda presentar la organización, aceptar donaciones, mostrar actividades, miembros que la componen y establecer contacto con usuarios registrados y público en general.
 
@@ -12,7 +13,7 @@ Se trata de una web para Somos Más Ong, una organización sin fines de lucro, q
                                password para ambos 1234test
 
 
-Interfaz desarrollada individualmente. La diseñé con una vista sencilla, desestructurada, con imágen y color, que recuerdan a los dibujos animados. Es responsive.
+Interfaz desarrollada en forma personal. La diseñé con una vista sencilla, desestructurada, con imágen y color, que recuerdan a los dibujos animados. Tiene diseño responsive.
 
 Desarrollada con : con React JS, Html, Css y Bootstrap
 
@@ -37,10 +38,10 @@ Funcionalidades :
 
 🏷️ Backend
 
-🌐 Deploy https://somosmasdeploybackend-production.up.railway.app
+🌐 Deploy https://somos-mas-deploy-backend.vercel.app
 
-          rutas de ejemplo : https://somosmasdeploybackend-production.up.railway.app/categories
-                             https://somosmasdeploybackend-production.up.railway.app/testimonials/public
+          rutas de ejemplo : https://somos-mas-deploy-backend.vercel.app/categories
+                             https://somos-mas-deploy-backend.vercel.app/testimonials/public
                                      
                   
 Api base desarrollada grupalmente en mi grupo de aceleración de Alkemy Node JS. 
